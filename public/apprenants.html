@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cotisants — Gérant</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <div>
+      <div class="logo"><span class="mark">CC</span> Carnet de Cohorte</div>
+      <nav>
+        <a href="gerant.html"><span class="ic">▦</span> Dashboard</a>
+        <a href="apprenants.html" class="active"><span class="ic">◔</span> Cotisants</a>
+        <a href="campagne.html"><span class="ic">◈</span> Campagnes</a>
+        <a href="paiement.html"><span class="ic">✒</span> Historique</a>
+      </nav>
+    </div>
+    <div class="foot">Rôle : Gérant<br>Cohorte P8 — Juillet 2026</div>
+  </aside>
+
+  <div style="flex:1;display:flex;flex-direction:column;min-width:0;">
+
+    <header class="topbar">
+      <div class="search"><input type="text" placeholder="Rechercher un apprenant..."></div>
+      <div class="actions">
+        <div class="bell">🔔<span class="dot"></span></div>
+        <div class="avatar-chip">
+          <div class="avatar">CD</div>
+          <div class="who"><div class="name">Cheikh Diop</div><div class="role">Gérant</div></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="page-head">
+        <div class="eyebrow">Gestion de la classe</div>
+        <h1>24 cotisants</h1>
+        <p>Ajout manuel, auto-inscription ou import Excel/CSV.</p>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Import Excel/CSV</h2>
+        </div>
+        <p style="font-size:12px;color:var(--ink-soft);margin:0 0 12px;">Colonnes attendues : <code>nom;prenom;email</code></p>
+        <form style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+          <input type="file" accept=".csv" style="max-width:260px;">
+          <button type="submit" class="btn btn-secondary">Importer</button>
+          <a href="#" class="btn btn-primary" style="margin-left:auto;">+ Ajouter un apprenant</a>
+        </form>
+      </div>
+
+      <div class="panel">
+        <table class="simple">
+          <thead><tr><th>Nom</th><th>Email</th><th>Inscrit le</th><th>Statut</th><th></th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Awa Diallo</td><td>awa.diallo@cohorteP8.local</td><td>03/05/2026</td>
+              <td><span class="pill ok">à jour</span></td>
+              <td><a href="#" class="btn btn-sm btn-secondary">Modifier</a></td>
+            </tr>
+            <tr>
+              <td>Moussa Koné</td><td>moussa.kone@cohorteP8.local</td><td>03/05/2026</td>
+              <td><span class="pill retard">2 retards</span></td>
+              <td><a href="#" class="btn btn-sm btn-secondary">Modifier</a></td>
+            </tr>
+            <tr>
+              <td>Fatou Sow</td><td>fatou.sow@cohorteP8.local</td><td>10/05/2026</td>
+              <td><span class="pill ok">à jour</span></td>
+              <td><a href="#" class="btn btn-sm btn-secondary">Modifier</a></td>
+            </tr>
+            <tr>
+              <td>Ibrahim Traoré</td><td>ibrahim.traore@cohorteP8.local</td><td>03/05/2026</td>
+              <td><span class="pill ok">à jour</span></td>
+              <td><a href="#" class="btn btn-sm btn-secondary">Modifier</a></td>
+            </tr>
+            <tr>
+              <td>Aïcha Bamba</td><td>aicha.bamba@cohorteP8.local</td><td>03/05/2026</td>
+              <td><span class="pill retard">3 retards</span></td>
+              <td><a href="#" class="btn btn-sm btn-secondary">Modifier</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <nav class="bottom-nav">
+    <a href="gerant.html"><span class="ic">▦</span>Tableau</a>
+    <a href="paiement.html"><span class="ic">✒</span>Paiement</a>
+    <a href="campagne.html"><span class="ic">◈</span>Campagnes</a>
+    <a href="apprenants.html" class="active"><span class="ic">◔</span>Classe</a>
+  </nav>
+
+</div>
+
+</body>
+</html>
