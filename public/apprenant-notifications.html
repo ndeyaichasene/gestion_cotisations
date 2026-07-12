@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notifications — Apprenant</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <div>
+      <div class="logo"><span class="mark">CC</span> Carnet de Cohorte</div>
+      <nav>
+        <a href="apprenant.html"><span class="ic">⌂</span> Accueil</a>
+        <a href="apprenant-historique.html"><span class="ic">▤</span> Historique</a>
+        <a href="apprenant-notifications.html" class="active"><span class="ic">◔</span> Alertes</a>
+      </nav>
+    </div>
+    <div class="foot">Rôle : Apprenant<br>Cohorte P8</div>
+  </aside>
+
+  <div style="flex:1;display:flex;flex-direction:column;min-width:0;">
+
+    <header class="topbar">
+      <div class="search"><input type="text" placeholder="Rechercher..."></div>
+      <div class="actions">
+        <div class="bell">🔔<span class="dot"></span></div>
+        <div class="avatar-chip">
+          <div class="avatar">AD</div>
+          <div class="who"><div class="name">Awa Diallo</div><div class="role">Apprenant</div></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <div class="kpi-card alert" style="margin-bottom:18px;">
+        <div class="kpi-label">⚠ Attention</div>
+        <div class="kpi-value" style="font-size:18px;">Vous avez 2 semaines de retard</div>
+        <div class="kpi-sub">Merci de régulariser votre situation auprès du Gérant.</div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><h2>Toutes les notifications</h2></div>
+        <div class="feed-item">
+          <div class="feed-dot alert"></div>
+          <div><div class="txt"><strong>Relance :</strong> la cotisation de la semaine S37 est en retard.</div><div class="time">Il y a 5 jours</div></div>
+        </div>
+        <div class="feed-item">
+          <div class="feed-dot alert"></div>
+          <div><div class="txt"><strong>Relance :</strong> la cotisation de la semaine S36 est en retard.</div><div class="time">Il y a 12 jours</div></div>
+        </div>
+        <div class="feed-item">
+          <div class="feed-dot"></div>
+          <div><div class="txt">Nouvelle campagne Cas Social — Famille Koné (montant libre).</div><div class="time">Il y a 2 jours</div></div>
+        </div>
+        <div class="feed-item">
+          <div class="feed-dot"></div>
+          <div><div class="txt">Cotisation Anniversaires de juillet ouverte — montant fixe 2 000 F.</div><div class="time">Il y a 6 jours</div></div>
+        </div>
+      </div>
+
+      <div class="panel" style="text-align:center;">
+        <p style="font-size:12.5px;color:var(--ink-soft);margin:0 0 12px;">Besoin d'aide sur un paiement en retard ?</p>
+        <a href="#" class="btn btn-primary">Contacter le Gérant</a>
+      </div>
+
+    </main>
+  </div>
+
+  <nav class="bottom-nav">
+    <a href="apprenant.html"><span class="ic">⌂</span>Accueil</a>
+    <a href="apprenant-historique.html"><span class="ic">▤</span>Historique</a>
+    <a href="apprenant-notifications.html" class="active"><span class="ic">◔</span>Alertes</a>
+  </nav>
+
+</div>
+
+</body>
+</html>

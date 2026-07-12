@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statistiques globales — Coach</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <div>
+      <div class="logo"><span class="mark">CC</span> Carnet de Cohorte</div>
+      <nav>
+        <a href="coach.html" class="active"><span class="ic">▦</span> Dashboard</a>
+        <a href="coach-audit.html"><span class="ic">◔</span> Audit</a>
+      </nav>
+    </div>
+    <div class="foot">Rôle : Coach</div>
+  </aside>
+
+  <div style="flex:1;display:flex;flex-direction:column;min-width:0;">
+
+    <header class="topbar">
+      <div class="search"><input type="text" placeholder="Rechercher..."></div>
+      <div class="actions">
+        <div class="bell">🔔<span class="dot"></span></div>
+        <div class="avatar-chip">
+          <div class="avatar">BB</div>
+          <div class="who"><div class="name">Baila Wane</div><div class="role">Coach</div></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="page-head">
+        <div class="eyebrow">Coach — Supervision </div>
+        <h1>Statistiques globales</h1>
+        <p>Relevé mensuel — Juillet 2026.</p>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-card dark">
+          <div class="kpi-label">Trésorerie globale</div>
+          <div class="kpi-value">20 000 F</div>
+          <div class="kpi-sub">CFA</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Taux de recouvrement</div>
+          <div class="kpi-value">91%</div>
+          <div class="kpi-sub">semaine en cours</div>
+        </div>
+        <div class="kpi-card alert">
+          <div class="kpi-label">Alertes retards</div>
+          <div class="kpi-value">12 Retards</div>
+          <div class="kpi-sub">à surveiller</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Campagnes ouvertes</div>
+          <div class="kpi-value">03</div>
+          <div class="kpi-sub">actives</div>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <div class="panel">
+            <div class="panel-head"><h2>État de recouvrement des apprenants</h2></div>
+            <table class="simple">
+              <thead><tr><th>Apprenant</th><th>Reçu / Attendu</th><th>Statut</th></tr></thead>
+              <tbody>
+                <tr><td>Awa Diallo</td><td>100 F / 100 F</td><td><span class="pill ok">à jour</span></td></tr>
+                <tr><td>Moussa Koné</td><td>70 F / 100 F</td><td><span class="pill retard">retard</span></td></tr>
+                <tr><td>Fatou Sow</td><td>80 F / 100 F</td><td><span class="pill attente">à surveiller</span></td></tr>
+                <tr><td>Ibrahim Traoré</td><td>100 F / 100 F</td><td><span class="pill ok">à jour</span></td></tr>
+                <tr><td>Aïcha Bamba</td><td>50 F / 100 F</td><td><span class="pill retard">retard</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <div class="panel">
+            <div class="panel-head"><h2>Projection financière</h2></div>
+            <p style="font-size:12.5px;color:var(--ink-soft);line-height:1.6;">
+              Sur la base du taux actuel de 91% de recouvrement, la trésorerie
+              projetée en fin de mois est estimée à environ 20 000 F CFA.
+            </p>
+          </div>
+          <div class="panel">
+            <div class="panel-head"><h2>Activité récente</h2></div>
+            <div class="feed-item"><div class="feed-dot"></div><div><div class="txt">Paiement enregistré — Awa Diallo</div><div class="time">Il y a 20 min</div></div></div>
+            <div class="feed-item"><div class="feed-dot alert"></div><div><div class="txt">Relance automatique envoyée — 3 apprenants</div><div class="time">Il y a 2h</div></div></div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <nav class="bottom-nav">
+    <a href="coach.html" class="active"><span class="ic">▦</span>Statistiques</a>
+    <a href="coach-audit.html"><span class="ic">◔</span>Audit</a>
+  </nav>
+
+</div>
+
+</body>
+</html>
