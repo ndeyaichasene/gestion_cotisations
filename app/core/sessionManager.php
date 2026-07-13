@@ -30,3 +30,8 @@ function destroySession()
 {
     session_destroy();
 }
+
+function isConnected()
+{
+    return isset($_SESSION['user']);
+}

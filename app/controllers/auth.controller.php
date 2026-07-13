@@ -38,16 +38,44 @@ function login()
 
 
         startSession();
-
+    unset($user['password']);
         setSession('user', $user);
 
 
-        echo "Connexion réussie";
+        if ($user['role'] === 'gerant') {
+
+            header('Location: /gerant/dashboard');
+            exit;
+        }
 
 
+        if ($user['role'] === 'coach') {
+
+            header('Location: /coach/dashboard');
+            exit;
+        }
+
+
+        if ($user['role'] === 'apprenant') {
+
+            header('Location: /apprenant/dashboard');
+            exit;
+        }
     } else {
 
         require_once dirname(__DIR__) . '/views/auth/login.php';
-
     }
+}
+
+
+function logout()
+{
+    require_once dirname(__DIR__) . '/core/sessionManager.php';
+
+    startSession();
+
+    destroySession();
+
+    header('Location: /login');
+    exit;
 }
