@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Connexion — Carnet de Cohorte P8</title>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
@@ -23,28 +23,23 @@
     <div class="auth-form">
       <h2>Connexion à votre espace</h2>
       <p class="hint">Renseignez vos identifiants pour accéder au tableau de bord.</p>
-
-      <form>
+    <?php require_once dirname(__DIR__) . '/components/error.php'; ?>
+      <form  method="POST" action="/login">
         <div class="field">
-          <label for="email">Email ou téléphone</label>
-          <input type="text" id="email" name="email" placeholder="ex : awa@cohorte.com" autocomplete="username">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="ex : awa@cohorteP8.com" autocomplete="username">
         </div>
         <div class="field">
           <label for="password">Mot de passe</label>
-          <input type="password" id="password" name="password" placeholder="••••••••" autocomplete="current-password">
+          <input type="password" id="password" name="password" placeholder="*******" autocomplete="current-password">
         </div>
 
         <div class="field-row">
-          <label><input type="checkbox"> Se souvenir de moi</label>
+          <label><input type="checkbox" name="remember"> Se souvenir de moi</label>
           <a href="#" class="btn-ghost">Mot de passe oublié ?</a>
         </div>
 
         <button type="submit" class="btn btn-primary">connecter→ </button>
-         <!-- <div class="btn-container">
-              <a href="gerant.html"  class="btn btn-primary" > connecter gerant → </a> 
-            <a href="coach.html"  class="btn btn-primary" > connecter coach → </a> 
-            <a href="apprenant.html"  class="btn btn-primary" > connecter apprenant → </a>
-         </div> -->
           
       </form>
 
